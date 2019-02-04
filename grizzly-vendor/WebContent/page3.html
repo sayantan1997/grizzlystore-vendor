@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Navigation page : 3</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+<div class="container-fluid">
+<div class="navbar-header">
+<img src="images/page2.PNG">
+</div>
+
+
+
+<div class="nav navbar-nav navbar-center">
+<input type="text"  class='btn' style="outline:none;" name="search" placeholder="  Search..." id="t1">
+<span class="glyphicon glyphicon-search" id="icon"></span>
+</div>
+
+<ul class="nav navbar-nav navbar-right" id="t2">
+<li id="bell"><i style="font-size:20px" class="fa" style="position:realtive; left:90px;">&#xf0f3;</i></li>
+<li id="bell" style="font-size:19px;">&nbsp;Welcome Admin</li>
+<li><a href="index.html"><input type="button" class='btn' name="logout" value="logout" id="b1" style="outline:none;" ></a></li>
+</ul>
+</div>
+</nav>
+
+
+
+
+  <div id="profile" style="position:relative; left:10px; width :100%;">
+  <div class="container-fluid">
+  <div class="row">
+  
+  
+  <div class="col-sm-2">
+  
+  <div class="well" style="height:650px;">
+  
+  
+  
+  
+  <div id="profile" style="background-color:grey; height:50px;">
+    
+    <div class="row">
+
+    <div class="col-sm-6" style="padding-left:30px; padding-top:5px">PROFILE</div>
+
+   
+  </div>
+  
+  </div>
+  
+  
+  <div style="text-align:center; padding:5px;">
+  <img src="images/pic.PNG" height="180px" width="150px">
+  <p style="font-size:19px;margin-top:10px;">HELEN CHO</p>
+  <p style="font-size:15px; font-weight:bold;">ID</p>
+  <p>12345</p>
+  <p style="font-size:15px; font-weight:bold;">DESIGNATION</p>
+  <p>Assistant Manager</p>
+  <p style="font-size:15px; font-weight:bold;">OFFICE</p>
+  <p>NY,NYC,USA</p>
+  </div>
+  </div>
+  </div>
+
+
+ 
+<div class="col-sm-10" style="padding:20px;">
+  <ul class="nav nav-pills nav-justified" style="height:70px;background-color:#F2F1F1;">
+    <li id="butt1" class="col-sm-4"><a data-toggle="pill" href="#product" style="color:black; font-weight:bold;height:70px;text-align:center;padding-top:25px;">PRODUCTS</a></li>
+    <li id="butt1" class="col-sm-4"><a data-toggle="pill" href="#vendors" style="color:black; font-weight:bold;height:70px;text-align:center;padding-top:25px;">VENDORS</a></li>
+    <li id="butt1" class="col-sm-4"><a data-toggle="pill" href="#category" style="color:black; font-weight:bold;height:70px;text-align:center;padding-top:25px;">CATEGORY</a></li>
+    
+  </ul>
+
+ 
+  <div class="tab-content">
+    <div id="product" class="tab-pane fade in active" style="padding-top: 30px;">
+    <div class="row">
+    <div class="col-sm-5">
+    <div id="image" style="text-align:center;background-color:#F5F5F5;height:550px;width:450px;">
+    <img src="images/pic2.PNG" style="padding-top:70px;">
+    <p style="padding-top:50px;font-weight:bold;font-size:19px;">Add Image</p>
+    
+    
+    
+    </div>
+    <div style="display:inline-block;">
+    <img id="pic1" src="images/pic2.PNG"  style="width:100px;height:100px">
+    <img src="images/cross.png" style="width:12px;height:12px;border-radius:50px;position:absolute;top:555px;left:110px;">
+    </div>
+    <div style="display:inline-block;">
+    <img id="pic1" src="images/pic2.PNG"  style="width:100px;height:100px;">
+    <img src="images/cross.png" style="width:12px;height:12px;border-radius:50px;position:absolute;top:555px;left:210px;">
+    </div>
+    <div style="display:inline-block;">
+    <img id="pic1" src="images/pic2.PNG"  style="width:100px;height:100px;">
+    <img src="images/cross.png" style="width:12px;height:12px;border-radius:50px;position:absolute;top:555px;left:315px;">
+    </div>
+    <div style="display:inline-block;">
+    <img id="pic1" src="images/pic2.PNG"  style="width:100px;height:100px;">
+    <img src="images/cross.png" style="width:12px;height:12px;border-radius:50px;position:absolute;top:555px;left:420px;">
+    </div>
+    
+    </div>
+    
+           
+    <div class="col-sm-4">
+    
+    <form class="w3-container w3-card-4 w3-light-grey">
+    <p>      
+    <input class="w3-input w3-border-0" type="text" placeholder="Enter Product ID" style="outline: none;border-style: none;"></p>
+    </form>
+    <hr>
+    
+    <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="background-color:white;color:black;border-style: none;outline: none;">Category
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#"><input type="radio" name="category" value="Electronics">Electronics</a></li>
+      <li><a href="#"><input type="radio" name="category" value="Appliances">Appliances</a></li>
+      <li><a href="#"><input type="radio" name="category" value="Healthcare">Health care</a></li>
+      <li><a href="#"><input type="radio" name="category" value="Furniture">Furniture</a></li>
+      <li><a href="#"><input type="radio" name="category" value="Automobile">Automobile</a></li>
+    </ul>
+    </div>
+    <hr>
+    
+    <form class="w3-container w3-card-4 w3-light-grey">
+    <p>      
+    <input   class="w3-input w3-border-0" type="text" placeholder="Name" style="border-style: none;outline: none;"></p>
+    </form>
+    <hr>
+    
+    <form class="w3-container w3-card-4 w3-light-grey">
+    <p>      
+    <input class="w3-input w3-border-0" type="text" placeholder="Description" style="outline: none;border-style: none;"></p>
+    </form>
+    <hr>
+    
+    <form class="w3-container w3-card-4 w3-light-grey">
+    <p>      
+    <input class="w3-input w3-border-0" type="text" placeholder="Price" style="outline: none;border-style: none;"></p>
+    <hr>
+    </form>
+    
+    <div class="buttons" style="padding-top: 130px;padding-left:550px;">
+    <form>
+    <input type="submit" name="add" value="Add" class='btn' style="background-color:#414141;color:white;font-weight:bold;border-radius:50px;width:150px;height:40px;font-weight:bold;outline: none;">
+    <br>
+    <input type="submit" name="add" value="Cancel" class='btn' style="margin-top:20px;background-color:#C5C5C5;color:white;font-weight:bold;border-radius:50px;width:150px;height:40px;font-weight:bold;outline: none;">
+    </form>
+   
+    </div>
+    
+    </div>  
+    </div>  
+    </div>
+    <div id="vendors" class="tab-pane fade">
+      <p></p>
+    </div>
+    <div id="category" class="tab-pane fade">
+      <p></p>
+    </div>
+    
+  </div>
+ </div> 
+ 
+</div>
+</div>
+</div>
+
+
+</body>
+</html>
